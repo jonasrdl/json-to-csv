@@ -11,12 +11,10 @@ import (
 )
 
 func main() {
-	// Define command line flags
 	jsonFile := flag.String("json", "people.json", "the path to the input JSON file")
 	csvFile := flag.String("csv", "people.csv", "the path to the output CSV file")
 	flag.Parse()
 
-	// Validate command line arguments
 	if *jsonFile == "" {
 		fmt.Println("Error: Invalid input file")
 		return
